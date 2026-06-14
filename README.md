@@ -103,45 +103,22 @@ lib/modules/         # module manifest, registry, route guard + enable/disable
 middleware.ts        # cookie-based auth + module gate
 ```
 
-## Adding a module
+## Working in this repo
 
-Studio features are pluggable. Each module owns its sidebar entry, route
-segments and i18n strings, and can be toggled on/off from
-**Settings → Modules**. To add one, e.g. an `inventory` module:
+Studio features are pluggable modules — each owns its sidebar entry, route
+segments and i18n strings, and toggles on/off from **Settings → Modules**.
+Implementing or extending one is documented in depth, with copy-pasteable
+recipes:
 
-1. **Create the feature folder + manifest**
+- **[`docs/`](docs/)** — authoritative docs ([architecture tour](docs/architecture-tour.md),
+  the [module guide](docs/modules.md), the [extension-point catalog](docs/extension-points.md),
+  a [glossary](docs/glossary.md)).
+- **`.claude/skills/designer-*`** — fast entry points usable from Claude Code:
+  `/designer-create-module`, `/designer-extend-module`, `/designer-migrate-feature`,
+  `/designer-architecture-tour`, `/designer-extension-points`, `/designer-verify`,
+  `/designer-glossary-lookup`. See [`docs/skills/catalog.md`](docs/skills/catalog.md).
 
-   ```ts
-   // features/inventory/module.ts
-   import { Boxes } from "lucide-react";
-   import type { StudioModule } from "@/lib/modules/types";
-
-   export const inventoryModule: StudioModule = {
-     id: "inventory",
-     title: "Inventory",
-     i18nKey: "modules.inventory.title",
-     description: "Browse and search the asset inventory.",
-     navGroup: "General",
-     nav: { title: "Inventory", href: "/inventory", icon: Boxes },
-     tint: { bg: "bg-teal-500/12", fg: "text-teal-600 dark:text-teal-400", glow: "shadow-teal-500/30" },
-     ownedPaths: ["/inventory"],
-     defaultEnabled: false,
-   };
-   ```
-
-2. **Register it** in `lib/modules/registry.ts` (append to `ALL_MODULES`)
-   and add the matching entry to `lib/modules/route-manifest.ts` — the
-   manifest is what the edge-runtime middleware reads to gate URLs, so it
-   must stay icon-free.
-
-3. **Build the route pages** under `app/(app)/inventory/...`.
-
-4. **Add translations** to `messages/en.json` / `messages/nl.json` under
-   `modules.inventory.title`.
-
-Done — the module appears as a checkbox on `/settings/modules`. Disabling
-it hides the sidebar entry and redirects any direct URL to `/dashboard`.
-Required modules (Dashboard, Workflows, Settings) cannot be disabled.
+Start with **[docs/modules.md](docs/modules.md)** to add or extend a module.
 
 ## Auth model (phase 1)
 
