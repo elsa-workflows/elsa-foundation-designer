@@ -1,0 +1,145 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "publish": "Publish",
+    "unpublish": "Unpublish",
+    "run": "Run",
+    "edit": "Edit",
+    "view": "View",
+    "import": "Import",
+    "export": "Export",
+    "loading": "Loading…",
+    "search": "Search",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "editor": {
+    "toolbar": {
+      "autosave": "Auto-save",
+      "undo": "Undo",
+      "redo": "Redo",
+      "autoLayout": "Auto-layout",
+      "readOnlyBanner": "You are viewing a read-only workflow. Edits are disabled."
+    },
+    "panel": {
+      "activity": {
+        "tabs": {
+          "inputs": "Inputs",
+          "outputs": "Outputs",
+          "common": "Common",
+          "resilience": "Resilience",
+          "commit": "Commit",
+          "logs": "Logs",
+          "task": "Task",
+          "tests": "Tests",
+          "version": "Version",
+          "info": "Info"
+        }
+      },
+      "workflow": {
+        "tabs": {
+          "info": "Info",
+          "variables": "Variables",
+          "io": "Inputs/Outputs",
+          "versions": "Versions"
+        }
+      }
+    }
+  },
+  "instances": {
+    "title": "Workflow Instances",
+    "subtitle": "Inspect running, suspended, completed and faulted instances.",
+    "tabs": {
+      "journal": "Journal",
+      "variables": "Variables",
+      "inputs": "Inputs",
+      "outputs": "Outputs",
+      "incidents": "Incidents",
+      "bookmarks": "Bookmarks"
+    }
+  },
+  "modules": {
+    "dashboard": { "title": "Dashboard" },
+    "workflows": { "title": "Workflows" },
+    "alterations": { "title": "Alterations" },
+    "diagnostics": { "title": "Diagnostics" },
+    "security": { "title": "Security" },
+    "labels": { "title": "Labels" },
+    "settings": { "title": "Settings" }
+  },
+  "settings": {
+    "modules": {
+      "pageTitle": "Modules",
+      "pageDescription": "Turn studio modules on or off. Required modules cannot be disabled. Changes apply immediately to everyone using this studio.",
+      "save": "Save changes",
+      "saved": "Module settings saved.",
+      "saveFailed": "Couldn't save module settings.",
+      "required": "Required",
+      "unsavedHint": "You have unsaved changes.",
+      "cleanHint": "All changes saved."
+    }
+  },
+  "connection": {
+    "engines": {
+      "switchHeading": "Switch engine",
+      "manage": "Manage engines…",
+      "addEngine": "Add engine",
+      "engineLabel": "Label",
+      "engineUrl": "URL",
+      "active": "Active",
+      "sourceEnv": "Provisioned",
+      "sourceUser": "Custom",
+      "notAuthorized": "Not authorized by server",
+      "invalidUrl": "Enter a valid URL.",
+      "duplicateUrl": "An engine with this URL already exists.",
+      "loginEngineBlocked": "This engine is not allowlisted on the server. Ask an admin to add it to ELSA_ENGINES."
+    }
+  },
+  "alterations": {
+    "plans": {
+      "title": "Alteration Plans",
+      "subtitle": "Inspect plans that the server is or has been executing.",
+      "searchPlaceholder": "Search by plan id"
+    },
+    "planDetails": {
+      "alterationsSection": "Alterations",
+      "jobsSection": "Jobs",
+      "noLogEntries": "No log entries — handler may not have run yet."
+    },
+    "instances": {
+      "title": "Alterable Instances",
+      "subtitle": "Pick a running workflow instance to alter.",
+      "alterAction": "Alter"
+    },
+    "designer": {
+      "altering": "Altering instance",
+      "stagedCount": "{count} staged",
+      "tabs": {
+        "selection": "Selection",
+        "variables": "Variables",
+        "plan": "Plan"
+      },
+      "discard": "Discard",
+      "dryRun": "Dry-run",
+      "submit": "Submit",
+      "dryRunResult": "Would target {count} instance(s)."
+    },
+    "config": {
+      "submit": "Add to plan",
+      "edit": "Update",
+      "targetActivity": "Target activity"
+    },
+    "submitWizard": {
+      "steps": { "review": "Review", "preview": "Preview", "submit": "Submit" },
+      "reviewHeading": "Confirm the changes that will be applied to instance {id}.",
+      "previewHeading": "This is the exact request the Studio will send.",
+      "viewPlan": "View plan",
+      "tryAgain": "Try again",
+      "submitting": "Submitting…",
+      "success": "Plan submitted.",
+      "failed": "Submission failed."
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "common": {
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
+    "publish": "Publiceren",
+    "unpublish": "Depubliceren",
+    "run": "Uitvoeren",
+    "edit": "Bewerken",
+    "view": "Bekijken",
+    "import": "Importeren",
+    "export": "Exporteren",
+    "loading": "Laden…",
+    "search": "Zoeken",
+    "yes": "Ja",
+    "no": "Nee"
+  },
+  "editor": {
+    "toolbar": {
+      "autosave": "Auto-opslaan",
+      "undo": "Ongedaan maken",
+      "redo": "Opnieuw",
+      "autoLayout": "Automatisch ordenen",
+      "readOnlyBanner": "Je bekijkt een alleen-lezen workflow. Bewerken is uitgeschakeld."
+    },
+    "panel": {
+      "activity": {
+        "tabs": {
+          "inputs": "Invoer",
+          "outputs": "Uitvoer",
+          "common": "Algemeen",
+          "resilience": "Veerkracht",
+          "commit": "Commit",
+          "logs": "Logs",
+          "task": "Taak",
+          "tests": "Tests",
+          "version": "Versie",
+          "info": "Info"
+        }
+      },
+      "workflow": {
+        "tabs": {
+          "info": "Info",
+          "variables": "Variabelen",
+          "io": "Invoer/Uitvoer",
+          "versions": "Versies"
+        }
+      }
+    }
+  },
+  "instances": {
+    "title": "Workflow-instanties",
+    "subtitle": "Bekijk lopende, gepauzeerde, voltooide en gefaalde instanties.",
+    "tabs": {
+      "journal": "Journaal",
+      "variables": "Variabelen",
+      "inputs": "Invoer",
+      "outputs": "Uitvoer",
+      "incidents": "Incidenten",
+      "bookmarks": "Bladwijzers"
+    }
+  },
+  "modules": {
+    "dashboard": { "title": "Dashboard" },
+    "workflows": { "title": "Workflows" },
+    "alterations": { "title": "Wijzigingen" },
+    "diagnostics": { "title": "Diagnostiek" },
+    "security": { "title": "Beveiliging" },
+    "labels": { "title": "Labels" },
+    "settings": { "title": "Instellingen" }
+  },
+  "settings": {
+    "modules": {
+      "pageTitle": "Modules",
+      "pageDescription": "Schakel studio-modules in of uit. Vereiste modules kunnen niet worden uitgeschakeld. Wijzigingen gelden direct voor iedereen die deze studio gebruikt.",
+      "save": "Wijzigingen opslaan",
+      "saved": "Module-instellingen opgeslagen.",
+      "saveFailed": "Kon module-instellingen niet opslaan.",
+      "required": "Vereist",
+      "unsavedHint": "Je hebt niet-opgeslagen wijzigingen.",
+      "cleanHint": "Alle wijzigingen opgeslagen."
+    }
+  },
+  "connection": {
+    "engines": {
+      "switchHeading": "Engine wisselen",
+      "manage": "Engines beheren…",
+      "addEngine": "Engine toevoegen",
+      "engineLabel": "Label",
+      "engineUrl": "URL",
+      "active": "Actief",
+      "sourceEnv": "Voorgeconfigureerd",
+      "sourceUser": "Eigen",
+      "notAuthorized": "Niet toegestaan door server",
+      "invalidUrl": "Voer een geldige URL in.",
+      "duplicateUrl": "Er bestaat al een engine met deze URL.",
+      "loginEngineBlocked": "Deze engine staat niet op de allowlist van de server. Vraag een beheerder om hem toe te voegen aan ELSA_ENGINES."
+    }
+  },
+  "alterations": {
+    "plans": {
+      "title": "Wijzigingsplannen",
+      "subtitle": "Bekijk plannen die de server uitvoert of heeft uitgevoerd.",
+      "searchPlaceholder": "Zoeken op plan-id"
+    },
+    "planDetails": {
+      "alterationsSection": "Wijzigingen",
+      "jobsSection": "Jobs",
+      "noLogEntries": "Geen logregels — de handler is mogelijk nog niet gestart."
+    },
+    "instances": {
+      "title": "Wijzigbare instanties",
+      "subtitle": "Kies een lopende workflow-instantie om te wijzigen.",
+      "alterAction": "Wijzigen"
+    },
+    "designer": {
+      "altering": "Instantie wijzigen",
+      "stagedCount": "{count} in concept",
+      "tabs": {
+        "selection": "Selectie",
+        "variables": "Variabelen",
+        "plan": "Plan"
+      },
+      "discard": "Verwijderen",
+      "dryRun": "Test",
+      "submit": "Indienen",
+      "dryRunResult": "Zou {count} instantie(s) raken."
+    },
+    "config": {
+      "submit": "Toevoegen aan plan",
+      "edit": "Bijwerken",
+      "targetActivity": "Doelactiviteit"
+    },
+    "submitWizard": {
+      "steps": { "review": "Controle", "preview": "Voorbeeld", "submit": "Indienen" },
+      "reviewHeading": "Bevestig de wijzigingen die op instantie {id} worden toegepast.",
+      "previewHeading": "Dit is het exacte verzoek dat de Studio verstuurt.",
+      "viewPlan": "Plan bekijken",
+      "tryAgain": "Opnieuw proberen",
+      "submitting": "Indienen…",
+      "success": "Plan ingediend.",
+      "failed": "Indienen mislukt."
+    }
+  }
+}
